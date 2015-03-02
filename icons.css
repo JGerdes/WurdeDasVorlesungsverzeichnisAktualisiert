@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'icons';
+  src: url('font/icons.eot?69092080');
+  src: url('font/icons.eot?69092080#iefix') format('embedded-opentype'),
+       url('font/icons.woff?69092080') format('woff'),
+       url('font/icons.ttf?69092080') format('truetype'),
+       url('font/icons.svg?69092080#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?69092080#icons') format('svg');
+  }
+}
+*/
+ 
+.icon-link:after, .icon-rss:before, .icon-github:before{
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+ 
+}
+ 
+.icon-link:after { content: '\e800'; } /* '' */
+.icon-rss:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e802'; } /* '' */
