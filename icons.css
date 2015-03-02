@@ -19,7 +19,7 @@
 }
 */
  
-.icon-link:after, .icon-rss:before, .icon-github:before{
+.icon-link:after, .icon-rss:before, .icon-github:after{
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
@@ -32,4 +32,4 @@
  
 .icon-link:after { content: '\e800'; } /* '' */
 .icon-rss:before { content: '\e801'; } /* '' */
-.icon-github:before { content: '\e802'; } /* '' */
+.icon-github:after { content: '\e802'; } /* '' */

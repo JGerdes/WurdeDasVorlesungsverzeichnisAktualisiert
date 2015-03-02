@@ -80,6 +80,11 @@ if($rss){
 				Vorlesungsverzeichnis der Fakult&auml;t 4 der Hochschule Bremen
 			</a>
 		</div>
+		<div>
+			<a class="icon-github" href="https://github.com/JGerdes/WurdeDasVorlesungsverzeichnisAktualisiert" target="_blank">
+				Source auf GitHub
+			</a>
+		</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
 	</body>
