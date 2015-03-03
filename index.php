@@ -51,42 +51,44 @@ if($rss){
 	</head>
 
 	<body>
-		<div class="blocker"></div>
-		Wurde das Vorlesungsverzeichnis schon aktualisiert?
-		<div class="yesno"><?php if($new){
-					echo 'Ja!';
-				}else{
-					echo 'Nein!';
-				}?></div>
-		<a class="button" href="<?php echo $base.$file;?>" target="_blank"><?php echo ($new ? "Als" : "Alte ")?>PDF-Datei herunterladen</a>
-	<div class="ifttt-recipes"></div>
-	<footer>
-		<div>
-			<a class="icon-rss" href="?rss" target="_blank">
-				RSS-Feed
-			</a>
+		<div class="wrapper">
+			Wurde das Vorlesungsverzeichnis schon aktualisiert?
+			<div class="yesno"><?php if($new){
+						echo 'Ja!';
+					}else{
+						echo 'Nein!';
+					}?></div>
+			<a class="button" href="<?php echo $base.$file;?>" target="_blank"><?php echo ($new ? "Als" : "Alte ")?>PDF-Datei herunterladen</a>
+			<footer>
+				<div>
+					<a class="icon-rss" href="?rss" target="_blank">
+						RSS-Feed
+					</a>
+				</div>
+				<div>
+					<a class="ifttt">
+						IFTTT Rezepte
+					</a>
+				</div>
+				<div>
+					Angaben ohne Gew&auml;hr
+				</div>
+				<div>
+					Daten werden geparst vom
+					<a class="icon-link" href="http://www.hs-bremen.de/internet/de/einrichtungen/fakultaeten/f4/service/vorlesungsverzeichnis/" target="_blank">
+						Vorlesungsverzeichnis der Fakult&auml;t 4 der Hochschule Bremen
+					</a>
+				</div>
+				<div>
+					<a class="icon-github" href="https://github.com/JGerdes/WurdeDasVorlesungsverzeichnisAktualisiert" target="_blank">
+						Source auf GitHub
+					</a>
+				</div>
+			</footer>
+			<div class="blocker"></div>
+			<div class="ifttt-recipes"></div>
 		</div>
-		<div>
-			<a class="ifttt">
-				IFTTT Rezepte
-			</a>
-		</div>
-		<div>
-			Angaben ohne Gew&auml;hr
-		</div>
-		<div>
-			Daten werden geparst vom
-			<a class="icon-link" href="http://www.hs-bremen.de/internet/de/einrichtungen/fakultaeten/f4/service/vorlesungsverzeichnis/" target="_blank">
-				Vorlesungsverzeichnis der Fakult&auml;t 4 der Hochschule Bremen
-			</a>
-		</div>
-		<div>
-			<a class="icon-github" href="https://github.com/JGerdes/WurdeDasVorlesungsverzeichnisAktualisiert" target="_blank">
-				Source auf GitHub
-			</a>
-		</div>
-	</footer>
-	<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
 <?php
